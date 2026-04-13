@@ -4,7 +4,7 @@ body {
 }
 
 .navbar {
-  background: #111;
+  background: linear-gradient(150deg, #e0ad73, #8d3309);
   color: white;
   padding: 1rem;
   display: flex;
@@ -19,13 +19,13 @@ body {
 }
 
 .navbar a {
-  color: white;
+  color: rgb(119, 4, 4);
   text-decoration: none;
   align-items: center;
 }
 
 .hero {
-  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  background: linear-gradient(135deg, #b6946d, #b37c62);
   color: white;
   text-align: center;
   padding: 4rem 2rem;
