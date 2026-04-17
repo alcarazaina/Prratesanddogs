@@ -12,12 +12,20 @@ body {
   background-attachment: fixed;
 }
 
+@font-face {
+  font-family: 'Prrates';
+  src: url('../ttfs/Prrates-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .navbar {
   background: linear-gradient(150deg, #dcc494, #a3743e);
   color: white;
 
   padding: 1rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
@@ -33,18 +41,21 @@ body {
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: clamp(0.6rem, 1vw, 1rem);
 }
 
 .navbar a {
   color: rgb(128, 4, 4);
+  font-size: clamp(12px, 1.5vw, 18px);
   text-decoration: none;
   align-items: center;
+  font-family: 'Prrates', Arial, sans-serif;
 }
 
 .content {
   color: rgb(128, 4, 4);
   text-align: center;
+  font-family: 'Prrates', Arial, sans-serif;
 }
 
 .folio {
@@ -95,6 +106,7 @@ body {
   padding: 0.8rem 1.5rem;
   cursor: pointer;
   margin-top: 1rem;
+  font-family: 'Prrates', Arial, sans-serif;
 }
 
 footer {
@@ -106,6 +118,20 @@ footer {
 
 
 @media (max-width: 600px) {
+
+   .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
 
   .folio-content h1 {
     font-size: 16px;
