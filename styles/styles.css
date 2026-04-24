@@ -23,7 +23,7 @@ body {
   background: linear-gradient(150deg, #dcc494, #a3743e);
   color: white;
 
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -126,23 +126,28 @@ footer {
 
   .navbar ul {
     flex-wrap: wrap;
+    padding-inline: 0px;
     justify-content: center;
   }
 
   .navbar a {
-    font-size: 14px;
+    font-size: clamp(8px, 3vw, 12px);
   }
 
   .folio-content h1 {
-    font-size: 16px;
+    font-size: clamp(12px, 3vw, 16px);
   }
 
   .folio-content h2 {
-    font-size: 14px;
+    font-size: clamp(10px, 3vw, 14px);
   }
 
   .folio-content p {
-    font-size: 12px;
+    font-size: clamp(8px, 2vw, 12px);
+  }
+
+   .folio-content ul {
+    font-size: clamp(8px, 2vw, 12px);
   }
 
   .content button {
