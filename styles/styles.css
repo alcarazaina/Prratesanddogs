@@ -79,6 +79,7 @@ body {
   margin: 1rem auto;
 }
 
+
 .folio-content {
   position: absolute;
   top: 50%;
@@ -88,6 +89,48 @@ body {
   text-align: center;
 
   font-size: clamp(16px, 2vw, 20px);
+}
+
+.folio-contentpersonaje {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.folio-personaje {
+  position: relative;
+  width: 40%;
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+.folio-personaje img { 
+  width: 100%; 
+  display: block; 
+} 
+
+.img-hover { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  opacity: 0; 
+} 
+
+.folio-personaje:hover 
+
+.img-base { 
+  opacity: 0; 
+} 
+
+.folio-personaje:hover 
+
+.img-hover { 
+  opacity: 1; 
 }
 
 .folio-content h1 {
@@ -167,6 +210,10 @@ footer {
   .folio-content img {
   width: clamp(80px, 50%, 200px);
   height: auto;
+}
+
+.folio-contentpersonaje {
+   font-size: clamp(8px, 2vw, 12px);
 }
 
 }
