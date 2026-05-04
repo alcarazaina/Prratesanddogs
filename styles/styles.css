@@ -102,6 +102,17 @@ body {
   font-size: clamp(16px, 2vw, 20px);
 }
 
+.folio-contentreconpensa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+
+  font-size: clamp(16px, 2vw, 20px);
+}
+
 .folio-personaje {
   position: relative;
   width: 40%;
@@ -133,6 +144,37 @@ body {
   opacity: 1; 
 }
 
+.folio-personajereco {
+  position: relative;
+  width: 60%;
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+.folio-personajereco img { 
+  width: 100%; 
+  display: block; 
+} 
+
+.img-hover { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  opacity: 0; 
+} 
+
+.folio-personajereco:hover 
+
+.img-base { 
+  opacity: 0; 
+} 
+
+.folio-personajereco:hover 
+
+.img-hover { 
+  opacity: 1; 
+}
+
 .folio-content h1 {
   font-size: clamp(24px, 4vw, 40px);
 }
@@ -159,6 +201,20 @@ body {
   cursor: pointer;
   margin-top: 1rem;
   font-family: 'Prrates', Arial, sans-serif;
+}
+
+video {
+  clip-path: polygon(
+    0% 5%, 3% 0%, 7% 3%, 12% 0%, 18% 4%, 
+    25% 1%, 33% 5%, 30% 0%, 58% 3%, 55% 0%, 
+    63% 4%, 70% 1%, 78% 5%, 95% 0%, 92% 3%, 
+    97% 1%, 100% 4%,
+    98% 30%, 100% 40%, 97% 60%, 100% 80%, 98% 100%,
+    92% 97%, 85% 100%, 78% 96%, 70% 100%, 63% 97%,
+    55% 98%, 38% 96%, 40% 100%, 33% 97%, 25% 100%,
+    18% 96%, 12% 100%, 7% 97%, 3% 100%, 0% 96%,
+    2% 60%, 0% 50%, 3% 40%, 0% 20%
+  );
 }
 
 footer {
@@ -213,6 +269,10 @@ footer {
 }
 
 .folio-contentpersonaje {
+   font-size: clamp(8px, 2vw, 12px);
+}
+
+.folio-contentreconpensa {
    font-size: clamp(8px, 2vw, 12px);
 }
 
