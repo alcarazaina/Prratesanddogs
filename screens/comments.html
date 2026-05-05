@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prrates & Dogs</title>
+    <link rel="stylesheet" href="..\styles\styles.css">
+    <link rel="icon" type="image/x-icon" href="..\img/iconCatSquel.ico">
+</head>
+<body>
+    
+  <nav class="navbar">
+    <ul>
+      <li><a href="..\index.html">Inicio</a></li>
+      <li><a href="..\screens/campain.html">Campaña</a></li>
+      <li><a href="..\screens/rewards.html">Recompensas</a></li>
+      <li><a href="..\screens/team.html">Sobre Heptark</a></li>
+      <li><a href="..\screens/faq.html">FaQ</a></li>
+      <li><a href="..\screens/comments.html">Comentarios</a></li>
+      <li><a href="..\screens/community.html">Comunidad</a></li>
+    </ul>
+  </nav>
+
+   <section class="title">
+    <h1><img src="..\img/PrrAtes.png" alt="Prrates" title="Prrates"
+width="20%" height="20%"/></h1>
+   </section>
+
+ <section class="content">
+  <div class="folio">
+    <img src="..\img/hoja.png" class="folio-bg">
+
+    <div class="folio-content">
+      <h1>Reseñas</h1>
+
+     <div class="carrusel"> 
+    <div class="carrusel-track" id="track"> 
+        <div class="carrusel-item"> 
+            <img src="..\img/comentario1.png"> 
+        </div> 
+            <div class="carrusel-item"> 
+                <img src="..\img/comentario2.png"> 
+            </div>
+
+            <div class="carrusel-item"> 
+                <img src="..\img/comentario3.png"> 
+            </div>
+            
+        </div> 
+        <button class="carrusel-btn btn-prev" onclick="mover(-1)">‹</button> <button class="carrusel-btn btn-next" onclick="mover(1)">›</button> 
+    </div> 
+    <div class="carrusel-dots" id="dots">
+
+    </div>
+
+      <p>Críticas y comentarios sobre Prrates</p>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2026 Heptark</p>
+  </footer>
+  <script src="..\js\main.js"></script>
+</body>
+</html>
